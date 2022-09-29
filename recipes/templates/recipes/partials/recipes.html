@@ -3,13 +3,13 @@
         <img src="https://blog.trello.com/hs-fs/Imported_Blog_Media/tarefas.jpg" alt="Temporario">
     </div>
     <div class="recipe-title-container">
-        <h2 class="recipe-title">Remanejamento </h2>
+        <h2 class="recipe-title">{{ recipe.title }} </h2>
     </div>
     <div class="recipe-author">
         <span class="recipe-author-item">
 
             <i class="fas fa-user"></i>
-            Matheus Loeblein
+            {{recipe.author.first_name}} {{recipe.author.last_name}}
         </span>
         <span class="recipe-author-item">
             <i class="fas fa-calendar-alt"></i>
