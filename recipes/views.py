@@ -11,6 +11,13 @@ def home(request):
     })
 
 
+def category(request, category_id):
+    recipes = Recipe.objects.filter(category__id=category_id).order_by('-id')
+    return render(request, "recipes\pages\home.html", context={
+        'recipes': recipes,
+    })
+
+
 def recipe(request, id):
     return render(request, "recipes\pages\pecipe-view.html", context={
         'recipe': make_recipe(),
