@@ -5,11 +5,11 @@
 {% for recipe in recipes %}
     {% include 'recipes/partials/recipes.html' %}
 {% empty %}
-
-{% endfor %}
     <div class="center m-y">
         <h1> No Recipes Found here =/ </h1>
     </div>
+{% endfor %}
+    
 </div>
 {% endblock content %}
        
